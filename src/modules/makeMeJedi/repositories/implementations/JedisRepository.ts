@@ -1,9 +1,8 @@
-
 import mongoose from 'mongoose';
+
 import { ICreateJedisDTO } from '../../dtos/ICreateJedisDTO';
-
 import { Jedi } from '../../entities/Jedi';
-
+import { IJedisRepository } from '../IJedisRepository';
 
 const contactSchema = new mongoose.Schema({
     firstname: String,
@@ -12,7 +11,7 @@ const contactSchema = new mongoose.Schema({
 
 const JediDoc = mongoose.model<Jedi>('Jedi', contactSchema);
 
-class JedisRepository implements IJediRepository {
+class JedisRepository implements IJedisRepository {
     create(jediData: ICreateJedisDTO): Jedi {
         const jediInstance = new Jedi(jediData);
 
@@ -24,9 +23,6 @@ class JedisRepository implements IJediRepository {
     async list() {
         const jedi = await JediDoc.find();
         return jedi;
-    }
-
- 
     }
 }
 

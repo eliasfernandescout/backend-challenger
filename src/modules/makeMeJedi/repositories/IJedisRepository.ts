@@ -3,6 +3,8 @@ import { Jedi } from '../entities/Jedi';
 
 interface IJedisRepository {
     // list(): Promise<Contact[]>;
-    create(contactData: ICreateJedisDTO): Jedi;
+    create(jediData: ICreateJedisDTO): Jedi;
     // sendToEmailPlatform(contactData: ICreateContactDTO): Promise<void>;
 }
+
+export { IJedisRepository };
