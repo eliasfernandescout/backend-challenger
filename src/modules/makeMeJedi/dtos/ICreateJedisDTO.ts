@@ -1,7 +1,7 @@
-interface ICreateJediDTO {
+interface ICreateJedisDTO {
     _id?: string;
     firstname: string;
     lastname?: string;
 }
 
-export { ICreateJediDTO };
+export { ICreateJedisDTO };
