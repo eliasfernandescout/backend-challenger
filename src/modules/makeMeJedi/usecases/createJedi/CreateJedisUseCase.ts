@@ -8,7 +8,6 @@ class CreateJedisUseCase {
     execute(jediData: ICreateJedisDTO): Jedi {
         try {
             const jedi = this.jedisRepository.create(jediData);
-
             return jedi;
         } catch (err) {
             console.log(err);
