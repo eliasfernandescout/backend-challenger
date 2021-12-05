@@ -1,4 +1,4 @@
-# Projeto Backend CRUD em TypeScript & Node.JS ⚙
+# Projeto Backend em TypeScript & Node.JS 🔧
 
 [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Node.JS](https://img.shields.io/badge/-Node.JS-339933?logo=node.js&logoColor=white)](https://nodejs.org/en/)
 
