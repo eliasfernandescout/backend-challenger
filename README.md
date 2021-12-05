@@ -2,9 +2,9 @@
 
 [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Node.JS](https://img.shields.io/badge/-Node.JS-339933?logo=node.js&logoColor=white)](https://nodejs.org/en/)
 
-Simples CRUD de Users e Addresses aplicando as técnologias Node.JS, TypeScript, TypeORM, TSyringe, Jest, Express, JWT e BCrypt.
+Simples CRUD de Users e Addresses aplicando as técnologias Node.JS, TypeScript, MongoDB, TSyringe, Jest, Express, JWT e BCrypt.
 
-Além disso na construção do projeto foram aplicados os conceitos de SOLID, DDD e TDD.
+Além disso na construção do projeto foram aplicados os conceitos de SOLID e DDD.
 
 ## Após clonar o repositório instale as dependências
 
@@ -14,7 +14,7 @@ Execute o seguinte comando no terminal para instalar todas as dependências:
 yarn
 ```
 
-## Criação do Banco de Dados com Docker 🐳
+<!-- ## Criação do Banco de Dados com Docker 🐳
 
 Execute o seguinte comando no terminal para criar uma imagem com o banco de dados PostgreSQL:
 
@@ -30,11 +30,11 @@ Para criar as tabelas no banco de dados, execute o seguinte comando:
 
 ```bash
 yarn typeorm migration:run
-```
+``` -->
 
-## Estrutura do Banco 🗃
+<!-- ## Estrutura do Banco 🗃
 
-![UML do BD](.github/media/UML.png)
+![UML do BD](.github/media/UML.png) -->
 
 ## Entendendo a estrutura de pastas 🗂
 
@@ -100,31 +100,36 @@ Renomeie o arquivo **.env.exemple** para **_.env_**.
 
 Em seguida gere um hash pelo [![MD5 HashGenerator](https://img.shields.io/badge/-MD5%20Hashgenerator-297AFF?logo=hash&logoColor=white)](https://www.md5hashgenerator.com/)
 
-Agora cole o hash gerado na configuração de APP_SECRET no arquivo **.env**:
+Agora cole o hash gerado na configuração de DATABASE no arquivo **.env**:
 
 ```
-APP_SECRET=#MD5 hash
+NODE_ENV=development
+
+MONGO_USER=mongoadmin
+MONGO_PASSWORD=mongoadmin
+MONGO_HOST=127.0.0.1:270
+
 ```
 
-# Executando os testes 🧪
+<!-- # Executando os testes 🧪
 
 Para os testes unitários execute o seguinte comando:
 
 ```bash
 yarn test
-```
+``` -->
 
 # Executando o projeto ▶
 
 Para executar o servidor rode o seguinte comando:
 
 ```bash
-yarn dev:server
+yarn dev
 ```
 
-> Se estiver tudo ok aparecerá a seguinte mensagem no terminal: Back-end started on port 3333! 🚀
+> Se estiver tudo ok aparecerá a seguinte mensagem no terminal: 🟠 SERVER STARTED ON PORT 5002
 
-# Documentação das rotas da API com Postman 🐱‍🚀
+<!-- # Documentação das rotas da API com Postman 🐱‍🚀
 
 Acesse a este que com a documentação das rotas e é possível testálas pelo próprio Postman: [![Postman](https://img.shields.io/badge/-POSTMAN-FF6C37?logo=postman&logoColor=white)](http://tinyurl.com/back-end-documentation)
 
@@ -227,4 +232,4 @@ Nesta rota é possível fazer a atualização dos dados de um endereço, pelo ID
 
 Nesta rota é possível deletar um endereço, pelo ID informado nas Path Variables.
 
-> /addresses/address/:address_id
+> /addresses/address/:address_id -->
