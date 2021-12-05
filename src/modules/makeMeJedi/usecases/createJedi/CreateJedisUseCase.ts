@@ -2,7 +2,7 @@ import { ICreateJedisDTO } from '../../dtos/ICreateJedisDTO';
 import { Jedi } from '../../entities/Jedi';
 import { IJedisRepository } from '../../repositories/IJedisRepository';
 
-class CreateJediUseCase {
+class CreateJedisUseCase {
     constructor(private jedisRepository: IJedisRepository) {}
 
     execute(jediData: ICreateJedisDTO): Jedi {
@@ -14,8 +14,7 @@ class CreateJediUseCase {
             console.log(err);
             throw new Error("Couldn't make you a new Jedi");
         }
-        // mautic request
     }
 }
 
-export { CreateJediUseCase };
+export { CreateJedisUseCase };
